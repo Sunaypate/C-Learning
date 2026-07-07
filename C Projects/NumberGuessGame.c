@@ -5,7 +5,7 @@ int main() {
     int lower;
     int upper;
 
-    printf("Welcome to Number Guesser, please select a lower and upper bound for your random number:\n");
+    printf("Welcome to Number Guesser, please select a lower and upper bound for your random number: (Example: 0 10)\n");
     scanf("%d%d", &lower, &upper);
 
     int randval = (rand() % (upper - lower + 1)) + lower;
