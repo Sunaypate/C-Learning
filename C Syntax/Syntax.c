@@ -6,6 +6,25 @@ void function() {
     //Function syntax
 }
 
+struct Cat {
+    double weight;
+    double height;
+    int age;
+}; //Standard Struct Syntax
+
+typedef struct Video {
+    double length;
+    int views;
+} video; //typedef keyword is needed to add a custom struct "type name" at the end that can be used shorthanded.
+
+enum Flavor {
+    Sweet,
+    Spicy,
+    Sour,
+    Savory,
+    Bitter = 10 //Can manually assign a integral value
+} foodFlavor; //Declaration of a flavor variable within the enum
+
 int main() {
     int intValue = 0;
     float floatingPointValue = 0.0;
@@ -14,13 +33,19 @@ int main() {
     char String[] = "This is a string"; //Technically a character array
     bool boolean = true;
 
-    int* pointer = &intValue; //This is creating a pointer
+    struct Cat sleepy = {.weight = 5.11, .height = 5.98, .age = 3};
+    video rblx;
+    rblx.length = 92.4;
+    rblx.views = 1000000;
 
+    enum Flavor snack = Savory;
+    foodFlavor = Spicy; 
+
+    int* pointer = &intValue; //This is creating a pointer
 
     double doubleArray[5] = {9.2, 4.7, 5.3, 2.1, 6.9}; //Creating a sized array
     int Int2dArray[2][2] = {{1, 2}, 
                             {3, 4}}; //Created a 2d array [R][C]
-
 
 
     // This is a one-line comment
